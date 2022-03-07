@@ -427,6 +427,10 @@ footer .bottom-box a {
     border-radius: 5px;
 }
 
+footer .bottom-box :last-child {
+    margin-top: 5px;
+}
+
  /* CSS GRID */
 
  .grid-container {
@@ -524,6 +528,188 @@ footer {
 .p4 {
     grid-column: 5/6; 
     grid-row: 8/9; 
+}
+
+@media only screen and (max-width: 1024px) {
+    
+    .plus-button {
+        margin: 0;
+    }
+
+    /* HEADER AND TOGGLE */
+
+    header {
+        flex-direction: column;
+    }
+
+    header .left-box {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-left: 0%;
+        padding: 10px 0 10px 0;
+    }
+
+    header .left-box .icon-menu {
+        display: flex;
+        margin-left: 15px;
+    }
+
+    header .left-box img {
+        margin-right: 3%;
+    }
+
+    .hidden-menu {
+        display: none;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    .visible-menu{
+        border-top: 1px solid rgb(255, 255,255);
+    }
+
+    .visible-menu li{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid rgb(255, 255,255);
+    }
+
+    /* SECTION */
+
+    /* PRODUCTS AND PROMOTIONS */
+
+    .promotion img {
+        width: 70%;
+        border-radius: 15px;
+        margin: auto;
+        display: block;
+    }
+
+    .buttom-buy-promotion {
+        margin: 15% auto 5% auto;
+    }
+
+    .product-cakes {
+        margin-bottom: 15%;
+    }
+
+    .product-pizza {
+        margin-bottom: 15%;
+    }
+
+    .product-pizza .description a {
+        font-size: 1.40em;
+    }
+
+    .margin {
+        margin-bottom: 5%;
+    }
+
+    .plus-button {
+        margin: 20px 0 20px 0;
+    }
+
+    /* FOOTER */ 
+
+    footer .bottom-box :last-child {
+        margin-top: 5px;
+    }
+
+    /* CSS GRID */
+
+    .grid-container {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 5% repeat(3, 1fr) 5%;
+        grid-template-rows: repeat(20, auto);
+        grid-column-gap: 30px;
+    }
+
+    header {
+        grid-column: 1/6; 
+        grid-row: 1/2; 
+    }
+
+    .slide-contenedor {
+        grid-column: 1/6; 
+        grid-row: 2/3; 
+    }
+
+    .section-two {
+        grid-column: 1/5; 
+        grid-row: 4/5; 
+    }
+
+    .section-four {
+        grid-column: 1/5; 
+        grid-row: 8/9; 
+    }
+    
+    footer {
+        grid-column: 1/6; 
+        grid-row: 12/13; 
+    }
+    
+    .plus-btn-1 {
+        grid-column: 2/5; 
+        grid-row: 3/4; 
+    }
+    
+    .plus-btn-2 {
+        grid-column: 2/5; 
+        grid-row: 7/8; 
+    }
+    
+    .plus-btn-3 {
+        grid-column: 2/5; 
+        grid-row: 11/12; 
+    }
+    
+    .t1 {
+        grid-column: 2/3; 
+        grid-row: 5/6; 
+    }
+    
+    .t2 {
+        grid-column: 3/4; 
+        grid-row: 5/6; 
+    }
+    
+    .t3 {
+        grid-column: 4/5; 
+        grid-row: 5/6; 
+    }
+    
+    .t4 {
+        grid-column: 2/3; 
+        grid-row: 6/7; 
+    }
+    
+    .p1 {
+        grid-column: 2/3; 
+        grid-row: 9/10; 
+    }
+    
+    .p2 {
+        grid-column: 3/4; 
+        grid-row: 9/10; 
+    }
+    
+    .p3 {
+        grid-column: 4/5; 
+        grid-row: 9/10; 
+    }
+    
+    .p4 {
+        grid-column: 2/3; 
+        grid-row: 10/11; 
+    }
+
 }
 
 
@@ -684,6 +870,10 @@ footer {
 
     footer .top-box nav {
         margin: 0px 0px 30px 10%;
+    }
+
+    footer .bottom-box :last-child {
+        margin-top: 5px;
     }
 
     /* CSS GRID */
