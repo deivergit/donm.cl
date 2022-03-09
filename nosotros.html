@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css-scss/modules/header.css">
+    <link rel="stylesheet" href="css-scss/nosotros.css">
+    <link rel="stylesheet" href="css-scss/fonts.css">
+    <link rel="stylesheet" href="css-scss/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="¡Compra tu torta o magdalena sin importar el lugar donde te encuentres! Delivery incluido con amplia cobertura a nivel local." />
+    <meta name="keywords" content="Tortas, Magdalenas, Delivery" />
+    <meta name="author" content="Deiver Martinez" />
+    <meta name="copyright" content="© 2020 DonM Postres Corporation. Todos los derechos reservados" />
+    <title>Donm.cl - Tu postre del dia al alcance de tu mano</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.ico">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <div class="left-box">
+                <a href="#" onclick="showmenu();"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                        viewBox="0 0 24 24" style="fill:rgba(252, 252, 252, 1);transform:;-ms-filter:"
+                        class="icon-menu">
+                        <path d="M4 11H16V13H4zM4 6H20V8H4zM4 18L11 18 11.235 18 11.235 16 11 16 4 16z"></path>
+                    </svg></a>
+                <a href="index.html" class="encoder-box"><img src="assets/img/company_logo.png"
+                        alt="Logo de la compañia"></a>
+            </div>
+            <nav class="hidden-menu" id="showmenu">
+                <ul>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="cobertura.html">COBERTURA</a></li>
+                    <li><a href="sugerenciasyreclamos.html">SUGERENCIAS Y RECLAMOS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="section-one">
+            <h1>Nosotros</h1>
+            <p>Somos artesanos.</p>
+            <p>Nuestro trabajo alcanza su fin cuando tú sientes el cariño que ponemos en cada detalle.</p>
+            <p>Creemos en la necesidad de poner una pausa a la vorágine del día a día, y darse tiempo para compartir con la
+                familia y los amigos. Para mirarse, para hablar, para recordarnos que nos queremos. Estamos seguros de que
+                es ahí donde reside la verdadera felicidad.</p>
+            <p>La vida es una suma de momentos irrepetibles, y queremos hacerlos más dulces, más pausados, más vividos.</p>
+        </section>
+    </div>
+    <script>
+        var showmenu = function () {
+            var showmenu = document.getElementById("showmenu");
+
+            if (showmenu.className == "hidden-menu") {
+                showmenu.className = "visible-menu";
+            } else {
+                showmenu.className = "hidden-menu";
+            }
+        }
+    </script>
+</body>
+
+</html>

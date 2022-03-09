@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Archivo Black';
+    src: url("../assets/fonts/ArchivoBlack-Regular.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Londrina Solid';
+    src: url("../assets/fonts/LondrinaSolid-Regular.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../assets/fonts/OpenSans-Regular.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("../assets/fonts/Poppins-Regular.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
