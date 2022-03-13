@@ -14,6 +14,12 @@ li {
 ul {
     list-style: none;
 }
+
+.grid-container {
+    width: 100%;
+    height: auto;
+}
+
 /* SECTIONS */
 
 .section-one {
@@ -21,7 +27,6 @@ ul {
     width: 100%;
     height: auto;
     flex-direction: column;
-    padding: 40px 0 40px 0;
 }
 
 .section-one h1 {
@@ -34,4 +39,89 @@ ul {
     width: 80%;
     height: auto;
     margin: auto;
+}
+
+article {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+article img {
+    display: block;
+    width: 300px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.section-two div {
+    display: flex;
+    width: 200px;
+    height: auto;
+}
+
+/* CSS GRID */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+}
+
+header {
+    grid-column: 1/4; 
+    grid-row: 1/2;
+}
+
+.section-one  {
+    grid-column: 2/4; 
+    grid-row: 2/3;
+}
+
+.tittle-two {
+    grid-column: 1/4; 
+    grid-row: 3/4;
+    background: red;
+}
+
+footer {
+    grid-column: 1/4; 
+    grid-row: 8/9;
+}
+
+.box-one {
+    grid-column: 1/2; 
+    grid-row: 4/5;
+    background: green;
+}
+
+.box-two {
+    grid-column: 2/3; 
+    grid-row: 4/5;
+    background: green;
+}
+
+.box-three {
+    grid-column: 3/4; 
+    grid-row: 4/5;
+}
+
+.box-four {
+    grid-column: 1/2; 
+    grid-row: 5/6;
+    background: orange;
+}
+
+.box-five {
+    grid-column: 2/3; 
+    grid-row: 5/6;
+    background: orange;
+}
+
+.box-six {
+    grid-column: 3/4; 
+    grid-row: 5/6;
+    background: orange;
 }
