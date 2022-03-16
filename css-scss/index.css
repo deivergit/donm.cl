@@ -52,7 +52,6 @@ ul {
     margin-right: 10px;
 }
 
-
 /* SLIDER */
 
 .slide-contenedor {
@@ -311,7 +310,7 @@ header nav li a:hover {
 
 .product-pizza .description a {
     width: 100%;
-    font-family: 'Londrina Solid', cursive;
+    font-family: 'Londrina Solid';
     color: rgb(255, 0, 0);
     font-size: 1.50em;
     padding: 5px 5px 5px 5px;

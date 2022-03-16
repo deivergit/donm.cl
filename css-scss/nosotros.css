@@ -27,11 +27,7 @@ ul {
     width: 100%;
     height: auto;
     flex-direction: column;
-}
-
-.section-one h1 {
-    display: block;
-    margin: 0 auto 20px auto;
+    padding-bottom: 30px;
 }
 
 .section-one p {
@@ -39,6 +35,27 @@ ul {
     width: 80%;
     height: auto;
     margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    padding: 8px;
+    font-size: 1.10em;
+}
+
+.title-one,
+.title-two {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1, 50em;
+}
+
+.title-one {
+    padding: 100px 0 0 0;
+}
+
+.title-two {
+    padding: 70px 0 70px 0;
 }
 
 article {
@@ -47,11 +64,27 @@ article {
     height: auto;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
+}
+
+article h3 {
+    width: 100%;
+    height: auto;
+    padding: 20px 0 20px 0;
+    font-family: 'Archivo Black', sans-serif;
+    text-align: center;
+}
+
+article p {
+    width: 90%;
+    height: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.10em;
 }
 
 article img {
     display: block;
-    width: 300px;
+    width: 330px;
     height: auto;
     border-radius: 100%;
 }
@@ -71,57 +104,181 @@ article img {
 }
 
 header {
-    grid-column: 1/4; 
+    grid-column: 1/4;
     grid-row: 1/2;
 }
 
-.section-one  {
-    grid-column: 2/4; 
+.section-one {
+    grid-column: 1/4;
     grid-row: 2/3;
 }
 
-.tittle-two {
-    grid-column: 1/4; 
+.title-two {
+    grid-column: 1/4;
     grid-row: 3/4;
-    background: red;
 }
 
 footer {
-    grid-column: 1/4; 
+    grid-column: 1/4;
     grid-row: 8/9;
 }
 
 .box-one {
-    grid-column: 1/2; 
+    grid-column: 1/2;
     grid-row: 4/5;
-    background: green;
 }
 
 .box-two {
-    grid-column: 2/3; 
+    grid-column: 2/3;
     grid-row: 4/5;
-    background: green;
 }
 
 .box-three {
-    grid-column: 3/4; 
+    grid-column: 3/4;
     grid-row: 4/5;
 }
 
 .box-four {
-    grid-column: 1/2; 
+    grid-column: 1/2;
     grid-row: 5/6;
-    background: orange;
 }
 
 .box-five {
-    grid-column: 2/3; 
+    grid-column: 2/3;
     grid-row: 5/6;
-    background: orange;
 }
 
 .box-six {
-    grid-column: 3/4; 
+    grid-column: 3/4;
     grid-row: 5/6;
-    background: orange;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    /* CSS GRID */
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(6, auto);
+    }
+
+    header {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .section-one {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+    .title-two {
+        grid-column: 1/4;
+        grid-row: 3/4;
+        display: none;
+    }
+
+    footer {
+        grid-column: 1/4;
+        grid-row: 8/9;
+    }
+
+    .box-one {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .box-two {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    .box-three {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    .box-four {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+
+    .box-five {
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+
+    .box-six {
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* SECTIONS */
+
+    .title-one {
+        padding: 40px 0 0 0;
+    }
+
+    .title-two {
+        padding: 30px 0 50px 0;
+    }
+
+    /* CSS GRID */
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1 auto;
+        grid-template-rows: 1 auto;
+    }
+
+    header {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .section-one {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    footer {
+        grid-column: 1/2;
+        grid-row: 12/13;
+    }
+
+    .box-one {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .box-two {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    .box-three {
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+
+    .box-four {
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+
+    .box-five {
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+
+    .box-six {
+        grid-column: 1/2;
+        grid-row: 9/10;
+    }
+
 }
